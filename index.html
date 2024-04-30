@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Isaac Ruiz</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <nav id="navbar">
+        <div class="logo">
+            <h4>Isaac Ruiz</h4>
+        </div>
+        <hr />
+    </nav>
+
+    <div class="title-container">
+        <h1 id="title">Hey, I’m Isaac</h1>
+        <h2 id="subtitle">An a appasionate of the web design</h2>
+    </div>
+
+    <div class="swipe-down-container">
+        <div class="arrow-1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <p id="swipe-down-text">swipe down</p>
+        <div class="arrow-2">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <section id="technologies">
+        <div id="technologies-heading-container"></div>
+        <h3 id="section-title">Technologies</h3>
+        <hr style="margin-right: 0;" />
+
+        <section class="carousel">
+            <div class="carousel__slider">
+                <ul class="carousel__list">
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/premiere.png" alt="premiere" id="carousel-img">
+                            <span class="tooltiptext">Premiere</span>
+                        </div>
+                    </li>
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/photoshop.png" alt="photoshop" id="carousel-img">
+                            <span class="tooltiptext">Photoshop</span>
+                        </div>
+                    </li>                
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/php.png" alt="php" id="carousel-img">
+                            <span class="tooltiptext">PHP</span>
+                        </div>
+                    </li>
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/bootstrap.png" alt="bootstrap" id="carousel-img">
+                            <span class="tooltiptext">Bootstrap</span>
+                        </div>
+                    </li>
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/figma.png" alt="figma" id="carousel-img">
+                            <span class="tooltiptext">Figma</span>
+                        </div>
+                    </li>
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/htmlLogo.png" alt="html" id="carousel-img">
+                            <span class="tooltiptext">HTML</span>
+                        </div>
+                    </li>
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/cssLogo.png" alt="css" id="carousel-img">
+                            <span class="tooltiptext">CSS</span>
+                        </div>
+                    </li>
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/jsLogo.png" alt="js" id="carousel-img">
+                            <span class="tooltiptext">JavaScript</span>
+                        </div>
+                    </li>
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/vueLogo.png" alt="vue" id="carousel-img">
+                            <span class="tooltiptext">Vue.js</span>
+                        </div>
+                    </li>
+                    <li class="carousel__item">
+                        <div class="tooltip-container">
+                            <img src="images/lightroom.png" alt="lightroom" id="carousel-img">
+                            <span class="tooltiptext">Lightroom</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </section>
+    </section>
+
+    <script src="js/particles.js"></script>
+    <script>
+        particlesJS (
+                        {
+            "particles": {
+                "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+                },
+                "color": {
+                "value": "#ffffff"
+                },
+                "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 3
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+                },
+                "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+                },
+                "size": {
+                "value": 2,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 2.4298777771478104,
+                    "size_min": 1.6199185180985403,
+                    "sync": false
+                }
+                },
+                "line_linked": {
+                "enable": false,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+                },
+                "move": {
+                "enable": true,
+                "speed": 0.5,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": false,
+                    "mode": "remove"
+                },
+                "resize": true
+                },
+                "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                    "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 80.995925904927,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+                }
+            },
+            "retina_detect": true
+            }
+        )
+    </script>
+    <script>
+        "use strict";
+
+    function carousel() {
+    let carouselSlider = document.querySelector(".carousel__slider");
+    let list = document.querySelector(".carousel__list");
+    let item = document.querySelectorAll(".carousel__item");
+    let list2;
+
+    const speed = 0.5;
+
+    const width = list.offsetWidth;
+    let x = 0;
+    let x2 = width;
+
+    function clone() {
+        list2 = list.cloneNode(true);
+        carouselSlider.appendChild(list2);
+        list2.style.left = `${width}px`;
+    }
+
+    function moveFirst() {
+        x -= speed;
+
+        if (width >= Math.abs(x)) {
+        list.style.left = `${x}px`;
+        } else {
+        x = width;
+        }
+    }
+
+    function moveSecond() {
+        x2 -= speed;
+
+        if (list2.offsetWidth >= Math.abs(x2)) {
+        list2.style.left = `${x2}px`;
+        } else {
+        x2 = width;
+        }
+    }
+
+    function hover() {
+        clearInterval(a);
+        clearInterval(b);
+    }
+
+    function unhover() {
+        a = setInterval(moveFirst, 10);
+        b = setInterval(moveSecond, 10);
+    }
+
+    clone();
+
+    let a = setInterval(moveFirst, 10);
+    let b = setInterval(moveSecond, 10);
+
+    carouselSlider.addEventListener("mouseenter", hover);
+    carouselSlider.addEventListener("mouseleave", unhover);
+    }
+
+    carousel();
+
+    </script>
+</body>
+</html>

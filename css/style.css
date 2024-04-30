@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "Clash Display bold";
+
+  src: url(../webfontkit-20240404-115750/clashdisplay-bold-webfont.woff);
+}
+
+@font-face {
+  font-family: "Clash Display semibold";
+
+  src: url(../webfontkit-20240404-115750/clashdisplay-semibold-webfont.woff);
+}
+
+@font-face {
+  font-family: "Clash Display regular";
+
+  src: url(../webfontkit-20240404-115750/clashdisplay-regular-webfont.woff);
+}
+
+@font-face {
+  font-family: "Clash Display medium";
+
+  src: url(../webfontkit-20240404-115750/clashdisplay-medium-webfont.woff);
+}
+
+@font-face {
+  font-family: "Clash Display light";
+
+  src: url(../webfontkit-20240404-115750/clashdisplay-light-webfont.woff);
+}
+
+@font-face {
+  font-family: "Clash Display extralight";
+
+  src: url(../webfontkit-20240404-115750/clashdisplay-extralight-webfont.woff);
+}
+
+#particles-js {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#navbar {
+  background-color: #0000000f;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 0;
+}
+
+.logo {
+  font-family: Clash Display regular;
+  font-size: 24px;
+  color: white;
+  margin-left: 10px;
+}
+
+hr {
+  margin-right: 20%;
+  margin-bottom: 0;
+}
+
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#title {
+  font-family: "Clash Display bold";
+  font-size: 96px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+#subtitle {
+  font-family: Clash Display medium;
+  font-size: 24px;
+  background: -webkit-linear-gradient(45deg, rgba(83,83,83,1) 0%, rgba(185,185,185,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.swipe-down-container {
+  width: 10%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#swipe-down-text {
+  font-family: "Sorts Mill Goudy", serif;
+  color: #FFFFFF;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.arrow-1 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.arrow-2 {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.arrow-1 span, .arrow-2 span{
+  display: block;
+  width: 0.5vw;
+  height: 0.5vw;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  margin-top: -5px;
+  margin-left: 0;
+  margin-right: -4px;
+  margin-bottom: 0;
+  animation: animate 2s infinite;
+}
+
+.arrow-1 span:nth-child(2), .arrow-2 span:nth-child(2){
+  animation-delay: -0.2s;
+}
+
+.arrow-1 span:nth-child(3), .arrow-2 span:nth-child(3){
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+}
+
+#technologies {
+    position: absolute;
+    top: 120%; /* Alineamos el borde superior de la sección al centro vertical */
+    left: 50%; /* Alineamos el borde izquierdo de la sección al centro horizontal */
+    transform: translate(-50%, -50%); /* Corregimos la posición para centrar completamente */
+    width: 80%; /* Ancho de la sección */
+    max-width: 80%; /* Ajusta el ancho máximo según tus necesidades */
+  }
+
+#section-title {
+  font-family: "Clash Display regular";
+  font-size: 40px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-mask-image: linear-gradient(270deg, transparent, black, black, transparent);
+  mask-image: linear-gradient(270deg, transparent, black, black, transparent);
+}
+
+.carousel__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  border: none;
+  height: 200px;
+}
+
+.carousel__list {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 27px;
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#carousel-img:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.3s;
+  font-size: 30px;
+}
+
+#carousel-img {
+  width: 100%;
+  height: 100%;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block; /* Para asegurarse de que el tooltip aparezca correctamente */
+}
+
+.tooltip-container .tooltiptext {
+    visibility: hidden;
+    /* width: 80%; */
+    background-color: #3939397e;
+    backdrop-filter: blur(15px);
+    color: white;
+    text-align: center;
+    padding: 8%;
+    padding-left: 12%;
+    padding-right: 12%;
+    border-radius: 50px;
+    border: 2px solid #5f5f5f7e;
+
+    /* Posiciona el tooltip arriba de la imagen y en el centro horizontalmente */
+    position: absolute;
+    z-index: 999;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Clash Display regular";
+}
+
+.tooltip-container:hover .tooltiptext {
+    visibility: visible;
+}
+  
+  
