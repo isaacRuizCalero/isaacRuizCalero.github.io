@@ -107,6 +107,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: default;
 }
 
 #swipe-down-text {
@@ -121,7 +122,7 @@ hr {
   top: 50%;
   left: 0%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
+  cursor: default;
 }
 
 .arrow-2 {
@@ -129,7 +130,7 @@ hr {
   top: 50%;
   right: 0%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
+  cursor: default;
 }
 
 .arrow-1 span, .arrow-2 span{
