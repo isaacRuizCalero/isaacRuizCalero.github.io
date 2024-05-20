@@ -6,15 +6,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/tab-icon.svg" type="image/x-icon">
     <title>Isaac Ruiz</title>
 </head>
 <body>
     <div id="particles-js"></div>
+    <div id="top"></div>
 
     <nav id="navbar">
         <div class="logo">
-            <h4>Isaac Ruiz</h4>
+            <h4><a href="#top" id="scrollToTop">Isaac Ruiz</a></h4>
         </div>
         <hr />
     </nav>
@@ -24,19 +27,154 @@
         <h2 id="subtitle">An a appasionate of the web design</h2>
     </div>
 
-    <div class="swipe-down-container">
-        <div class="arrow-1">
-            <span></span>
-            <span></span>
-            <span></span>
+    <a href="#scroll-to-projects" id="scrollLink">
+        <div class="swipe-down-container">
+            <div class="arrow-1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p id="swipe-down-text">swipe down</p>
+            <div class="arrow-2">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <p id="swipe-down-text">swipe down</p>
-        <div class="arrow-2">
-            <span></span>
-            <span></span>
-            <span></span>
+    </a>
+
+    <div id="scroll-to-projects"></div>
+    <section id="projects">
+        <div id="projects-heading-container"></div>
+        <h3 id="section-title">Projects</h3>
+        <hr style="margin-right: 0;" />
+
+        <div class="project-container-1">
+            <div class="project-heading">
+                <h3 id="project-title">FoodLink</h3>
+            </div>
+
+            <div class="technologies-tiles">
+                <div class="tile">
+                    <p>Laravel</p>
+                </div>
+                <div class="tile">
+                    <p>php</p>
+                </div>
+                <div class="tile">
+                    <p>Vue.js</p>
+                </div>
+                <div class="tile">
+                    <p>JavaScript</p>
+                </div>
+                <div class="tile">
+                    <p>html</p>
+                </div>
+                <div class="tile">
+                    <p>css</p>
+                </div>
+                <div class="tile">
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+
+            <div class="project-bento">
+                <div class="project-bento-1" id="video-1-container">
+                    <video autoplay loop muted id="myVideo">
+                        <source src="videos/Rider.mp4" type="video/mp4">
+                    </video>
+
+                    <div id="subtitles">
+                        <p>Esta es la pagina principal de este proyecto</p>
+                    </div>   
+                    
+                    <div id="time-indicator">0s</div>
+                    <button id="playPauseButton">Pause</button>
+                </div>
+
+                <div class="project-bento-2">
+                    <div class="font-bento-container">
+                        <h1 class="font-bento-heading-1">Outfit</h1>
+                    </div>
+                    <div class="main-page-bento-container">
+                        <img id="foodLink-main-page" src="images/Landing Page Desktop.png" alt="">
+                    </div>
+                    <div class="color-palette-bento-container">
+                        <div class="color-palette-1-FL"></div>
+                        <div class="color-palette-2-FL"></div>
+                        <div class="color-palette-3-FL"></div>
+                    </div>
+                </div>
+
+                <div class="project-bento-3">
+                    <div class="images-bento-container">       
+                        <img src="images/loginMobileFL.png" alt="">
+                        <img src="images/riderRegisterMobileFL.png" alt="">
+                        <img src="images/riderProfileFL.png" alt="">
+                        <img src="images/createPackFL.png" alt="">
+                    </div>
+                    <div class="logo-bento-container">      
+                        <img src="images/logoWordWhite.png" alt="" style="width: 90%;">            
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="project-container-2">
+            <div class="project-heading">
+                <h3 id="project-title">Identity Manual</h3>
+            </div>
+
+            <div class="technologies-tiles">
+                <div class="tile">
+                    <p>html</p>
+                </div>
+                <div class="tile">
+                    <p>css</p>
+                </div>
+                <div class="tile">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+
+            <div class="project-bento">
+                <div class="project-bento-1">
+                    <img src="images/Rectangle 12.png" alt="">
+                    <img src="images/Rectangle 24.png" alt="">
+                    <img src="images/Rectangle 25.png" alt="">
+                </div>
+
+                <div class="project-bento-2">
+                    <div class="font-bento-container">
+                        <h1 class="font-bento-heading">Sorts Mill Goudy</h1>
+                    </div>
+                    <div class="main-page-bento-container">
+                        <img src="images/home 1.png" alt="">
+                    </div>
+                    <div class="color-palette-bento-container">
+                        <div class="color-palette-1"></div>
+                        <div class="color-palette-2"></div>
+                        <div class="color-palette-3"></div>
+                    </div>
+                </div>
+
+                <div class="project-bento-3">
+                    <div class="video-bento-container">       
+                        <!-- <button onclick="playVid2()" type="button" class="play-video-button">Play Video</button>
+                        <button onclick="pauseVid2()" type="button" class="pause-video-button">Pause Video</button><br> -->
+
+                        <video autoplay loop muted id="myVideo2">
+                            <source src="videos/sameSCREEN_RECORDING.webm" type="video/mp4">
+                        </video>             
+                    </div>
+                    <div class="logo-bento-container">      
+                        <img src="images/same.png" alt="" style="width: 90%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <section id="technologies">
         <div id="technologies-heading-container"></div>
@@ -111,7 +249,35 @@
           </section>
     </section>
 
+    <section id="contact">
+        <div id="contact-heading-container"></div>
+        <h3 id="section-title">Contact Me!</h3>
+        <hr style="margin-right: 0;" />
+
+        <div id="contact-content">
+            <a id="contact-email" href="mailto: isaacruiiiz04@gmail.com" target="_blank">isaacruiiiz04@gmail.com</a>
+            <div id="contact-socials">
+                <a href="https://www.linkedin.com/in/isaac-ruiz-calero-00a990294/" target="_blank" id="contact-tile">
+                    <img src="images/pajamas--linkedin.png" alt="">
+                    Linkedin
+                </a>
+                <a href="mailto: isaacruiiiz04@gmail.com" target="_blank" id="contact-tile">
+                    <img src="images/ic--round-email.png" alt="">
+                    email
+                </a>
+                <a href="https://github.com/isaacRuizCalero" target="_blank" id="contact-tile">
+                    <img src="images/mdi--github.png" alt="">
+                    Github
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+
     <script src="js/particles.js"></script>
+    <script src="js/videoControls.js"></script>
     <script>
         particlesJS (
                         {
@@ -288,6 +454,93 @@
 
     carousel();
 
+    document.getElementById('scrollToTop').addEventListener('click', function(event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+        
+        const targetId = this.getAttribute('href'); // Obtener el valor del atributo href
+        const targetElement = document.querySelector(targetId); // Obtener el elemento al que se va a desplazar
+        
+        // Hacer el desplazamiento suave con una curva de aceleración personalizada
+        smoothScrollTo(targetElement);
+    });
+
+    // Función para realizar el desplazamiento suave con una curva de aceleración personalizada
+    function smoothScrollTo(targetElement) {
+        const startPosition = window.pageYOffset; // Posición inicial de desplazamiento
+        const targetPosition = targetElement.offsetTop; // Posición final de desplazamiento
+        const distance = targetPosition - startPosition; // Distancia total de desplazamiento
+        const duration = 1000; // Duración de la animación en milisegundos
+        const startTime = performance.now(); // Momento inicial de la animación
+
+        // Función de animación
+        function animation(currentTime) {
+            const elapsedTime = currentTime - startTime; // Tiempo transcurrido desde el inicio de la animación
+            const progress = Math.min(elapsedTime / duration, 1); // Progreso de la animación (de 0 a 1)
+
+            // Aplicar una función de temporización exponencial para desacelerar gradualmente
+            const easing = progress * (2 - progress);
+
+            // Calcular la nueva posición de desplazamiento
+            const newPosition = startPosition + distance * easing;
+
+            // Realizar el desplazamiento
+            window.scrollTo(0, newPosition);
+
+            // Continuar la animación si aún no ha terminado
+            if (progress < 1) {
+                requestAnimationFrame(animation);
+            }
+        }
+
+        // Iniciar la animación
+        requestAnimationFrame(animation);
+    }
+
+
+
+
+
+    document.getElementById('scrollLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+            const targetId = this.getAttribute('href'); // Obtiene el valor del atributo href
+            const targetElement = document.querySelector(targetId); // Obtiene el elemento al que se va a desplazar
+
+            // Realiza el desplazamiento suave con una curva de aceleración personalizada
+            smoothScrollTo(targetElement);
+        });
+
+        // Función para realizar el desplazamiento suave
+        function smoothScrollTo(targetElement) {
+            const startPosition = window.pageYOffset; // Posición inicial de desplazamiento
+            const targetPosition = targetElement.offsetTop; // Posición final de desplazamiento
+            const distance = targetPosition - startPosition; // Distancia total de desplazamiento
+            const duration = 1000; // Duración de la animación en milisegundos
+            const startTime = performance.now(); // Momento inicial de la animación
+
+            // Función de animación
+            function animation(currentTime) {
+                const elapsedTime = currentTime - startTime; // Tiempo transcurrido desde el inicio de la animación
+                const progress = Math.min(elapsedTime / duration, 1); // Progreso de la animación (de 0 a 1)
+
+                // Aplica una función de temporización exponencial para desacelerar gradualmente
+                const easing = progress * (2 - progress);
+
+                // Calcula la nueva posición de desplazamiento
+                const newPosition = startPosition + distance * easing;
+
+                // Realiza el desplazamiento
+                window.scrollTo(0, newPosition);
+
+                // Continúa la animación si aún no ha terminado
+                if (progress < 1) {
+                    requestAnimationFrame(animation);
+                }
+            }
+
+            // Inicia la animación
+            requestAnimationFrame(animation);
+        }
     </script>
 </body>
 </html>
