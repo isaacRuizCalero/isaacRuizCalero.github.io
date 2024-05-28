@@ -11,9 +11,9 @@
 }
 
 @font-face {
-  font-family: "Clash Display regular";
+  font-family: "Clash Display medium";
 
-  src: url(../webfontkit-20240404-115750/clashdisplay-regular-webfont.woff);
+  src: url(../webfontkit-20240404-115750/clashdisplay-medium-webfont.woff);
 }
 
 @font-face {
@@ -36,6 +36,14 @@
 
 ::selection {
   background: #5249398d;
+}
+
+#mobile-blur {
+  display: none;
+}
+
+#mobile-blur-container {
+  display: none;
 }
 
 #particles-js {
@@ -66,11 +74,12 @@
 
 .logo {
   margin-left: 10px;
+  font-family: 'Clash Display medium';
 }
 
 .logo h4 a {
   text-decoration: none;
-  font-family: Clash Display regular;
+  font-family: "Clash Display medium";
   font-size: 24px;
   color: white;
 }
@@ -542,7 +551,7 @@ hr {
 }
 
 #section-title {
-  font-family: "Clash Display regular";
+  font-family: "Clash Display medium";
   font-size: 40px;
   color: white;
   margin-bottom: 25px;
@@ -569,8 +578,8 @@ ul {
   align-items: center;
   width: 100vw;
   border: none;
-  height: 100px;
-  margin-top: 50px;
+  height: 150px;
+  margin-top: 30px;
 }
 
 .carousel__list {
@@ -600,18 +609,19 @@ ul {
 #carousel-img {
   width: 100%;
   height: 100%;
-  transition: ease-in-out 0.3s;
+  transition: 0.3s;
 }
 
 #carousel-img:hover {
-  transform: scale(1.05);
-  transition: ease-in-out 0.3s;
+  /* transform: perspective(1000px) rotateY(-20deg) rotateX(0deg) scale(1.1); */
+  transition: 0.3s;
   font-size: 30px;
 }
 
 .tooltip-container {
     position: relative;
     display: inline-block; /* Para asegurarse de que el tooltip aparezca correctamente */
+    transform: perspective(1000px) rotateY(-20deg) rotateX(0deg);
 }
 
 .tooltip-container .tooltiptext {
@@ -633,7 +643,7 @@ ul {
     top: -45px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: "Clash Display regular";
+    font-family: "Clash Display medium";
 }
 
 .tooltip-container:hover .tooltiptext {
@@ -656,7 +666,7 @@ ul {
 }
 
 #contact-email {
-  font-family: "Clash Display regular";
+  font-family: "Clash Display medium";
   font-size: 32px;
   background: -webkit-linear-gradient(45deg, rgba(83, 83, 83, 1) 0%, rgba(185, 185, 185, 1) 90%, rgb(255, 255, 255) 100%);
   background-size: 200% auto;
@@ -722,6 +732,45 @@ ul {
 }
 
 @media (max-width: 768px) {
+  #mobile-blur {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+  }
+
+  #mobile-blur-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    z-index: 1001;
+  }
+
+  #mobile-blur-heading {
+    font-family: "Clash Display bold";
+    font-size: 48px;
+    color: white;
+    text-align: center;
+  }
+
+  #mobile-blur-text {
+    font-family: "Clash Display medium";
+    font-size: 24px;
+    color: white;
+    text-align: center;
+  }
+
   /* Typography adjustments */
   #title {
     font-size: 48px; /* Scaled down for mobile readability */
@@ -740,6 +789,7 @@ ul {
     padding: 0 3%; /* Smaller padding for larger clickable area */
     height: auto; /* Auto height for accommodating smaller elements */
     background-color: rgba(0, 0, 0, 0.85); /* Better visibility on scroll */
+    z-index: 999;
   }
 
   /* Logo adjustments for small screens */

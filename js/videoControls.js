@@ -2,9 +2,8 @@ const video = document.getElementById('myVideo');
         const subtitles = document.getElementById('subtitles');
         const timeIndicator = document.getElementById('time-indicator');
         const playPauseButton = document.getElementById('playPauseButton');
-        const maxDuration = 85; // Duración máxima en segundos
+        const maxDuration = 85;
 
-        // Función para alternar entre play y pausa
         function togglePlayPause() {
             if (video.paused) {
                 video.play();
@@ -15,63 +14,58 @@ const video = document.getElementById('myVideo');
             }
         }
 
-        // Escuchar clics en el video y en el botón para alternar play/pausa
         video.addEventListener('click', togglePlayPause);
         playPauseButton.addEventListener('click', togglePlayPause);
 
-        // Función para mostrar subtítulos
         function showSubtitles(text) {
             subtitles.textContent = text;
         }
 
-        // Reproducir el video automáticamente al cargar la página
         video.autoplay = true;
 
-        // Actualizar subtítulos y el indicador de tiempo
         video.addEventListener('timeupdate', function() {
             const currentTime = Math.floor(video.currentTime);
             timeIndicator.textContent = `${currentTime}s`;
 
             if (currentTime >= maxDuration) {
               video.pause();
-              video.currentTime = 0; // Reiniciar el video si lo deseas
+              video.currentTime = 0; 
               playPauseButton.textContent = 'Reproducir';
             }
 
             switch (currentTime) {
                 case 0:
-                    showSubtitles('Esta es la pagina principal de este proyecto');
-                    break;
+                  showSubtitles('This is the main page of this project');
+                  break;
                 case 5:
-                    showSubtitles('Aqui se muestran los packs que tenemos reservados');
-                    break;
+                  showSubtitles('Here are the packages we have reserved');
+                  break;
                 case 10:
-                    showSubtitles('Y aqui la accion de seleccionar a una persona para entregarselo');
-                    break;
+                  showSubtitles('And here is the action of selecting a person to deliver it to');
+                  break;
                 case 20:
-                    showSubtitles('Se puede seleccionar el pack que queremos entregar');
-                    break;
+                  showSubtitles('You can select the package you want to deliver');
+                  break;
                 case 25:
-                    showSubtitles('Y aparecera un mensaje de confirmacion de la entrega');
-                    break;
+                  showSubtitles('And a delivery confirmation message will appear');
+                  break;
                 case 30:
-                    showSubtitles('Ahora veremos la forma de reservar el pack');
-                    break;
+                  showSubtitles('Now we will see how to reserve the package');
+                  break;
                 case 65:
-                    showSubtitles('Esta es otra pagina del proyecto');
-                    break;
+                  showSubtitles('This is another page of the project');
+                  break;
                 case 70:
-                    showSubtitles('Donde se pueden ver a las personas que mas le hemos entregado');
-                    break;
+                  showSubtitles('Where you can see the people we have delivered to the most');
+                  break;
                 case 75:
-                    showSubtitles('Y por ultimo se puede ver el perfil del usuario');
-                    break;
+                  showSubtitles('And finally you can see the user profile');
+                  break;
                 default:
-                    break;
-            }
+                  break;
+              }              
         });
 
-        // Actualizar el estado del botón al cargar la página
         window.addEventListener('load', () => {
             playPauseButton.textContent = video.paused ? 'Play' : 'Pause';
         });
