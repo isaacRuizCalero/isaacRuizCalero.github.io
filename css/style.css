@@ -771,6 +771,10 @@ ul {
     text-align: center;
   }
 
+  .no-scroll {
+    overflow: hidden;
+  }
+
   /* Typography adjustments */
   #title {
     font-size: 48px; /* Scaled down for mobile readability */

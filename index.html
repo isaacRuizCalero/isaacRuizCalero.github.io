@@ -548,5 +548,16 @@
             requestAnimationFrame(animation);
         }
     </script>
+    <script>
+        // JavaScript to disable scrolling on mobile
+        function disableScroll() {
+            if (window.innerWidth <= 768) {
+                document.body.classList.add('no-scroll');
+            }
+        }
+
+        disableScroll();
+        window.addEventListener('resize', disableScroll);
+    </script>
 </body>
 </html>
