@@ -263,12 +263,12 @@ hr {
 
 .tile {
   width: fit-content;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 30px;
-  background-color: transparent;
-  border-radius: 50px;
-  border-color: #655a49;
+  background-color: #5f5f5f7e;
+  border-radius: 10px;
+  border-color: transparent;
   border-width: 2px;
   border-style: solid;
   display: flex;
@@ -281,7 +281,7 @@ hr {
 .tile p {
   font-family: "Clash Display medium";
   font-size: 16px;
-  color: #655a49;
+  color: #8b8b8b;
   margin: 0;
 }
 
@@ -396,6 +396,13 @@ hr {
   align-items: center;
   justify-content: center;
   border: 2px solid #5f5f5f7e;
+  transition: ease-in-out 0.7s;
+}
+
+.project-bento-1:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0px 20px 0px #bababa7e;
 }
 
 .project-bento-2 {
@@ -416,6 +423,13 @@ hr {
   align-items: center;
   justify-content: center;
   border: 2px solid #5f5f5f7e;
+  transition: ease-in-out 0.7s;
+}
+
+.font-bento-container:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0px 20px 0px #bababa7e;
 }
 
 .font-bento-heading-1 {
@@ -444,6 +458,14 @@ hr {
   align-items: center;
   justify-content: center;
   border: 2px solid #5f5f5f7e;
+  transition: ease-in-out 0.7s;
+}
+
+.main-page-bento-container:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0px 20px 0px #bababa7e;
+
 }
 
 #foodLink-main-page {
@@ -470,6 +492,14 @@ hr {
   justify-content: space-evenly;
   align-items: center;
   border: 2px solid #5f5f5f7e;
+  transition: ease-in-out 0.7s;
+}
+
+.color-palette-bento-container:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0px 20px 0px #bababa7e;
+
 }
 
 .color-palette-1,
@@ -534,6 +564,13 @@ hr {
   align-items: center;
   justify-content: center;
   border: 2px solid #5f5f5f7e;
+  transition: ease-in-out 0.7s;
+}
+
+.video-bento-container:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0px 20px 0px #bababa7e;
 }
 
 .images-bento-container {
@@ -545,6 +582,14 @@ hr {
   align-items: center;
   justify-content: space-evenly;
   border: 2px solid #5f5f5f7e;
+  transition: ease-in-out 0.7s;
+}
+
+.images-bento-container:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0px 20px 0px #bababa7e;
+
 }
 
 .images-bento-container img {
@@ -573,6 +618,13 @@ hr {
   align-items: center;
   justify-content: center;
   border: 2px solid #5f5f5f7e;
+  transition: ease-in-out 0.7s;
+}
+
+.logo-bento-container:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0px 20px 0px #bababa7e;
 }
 
 .logo-bento-heading {
@@ -620,8 +672,8 @@ ul {
   align-items: center;
   width: 100vw;
   border: none;
-  height: 150px;
-  margin-top: 30px;
+  height: 200px;
+  margin-top: 0px;
 }
 
 .carousel__list {
@@ -668,21 +720,19 @@ ul {
 
 .tooltip-container .tooltiptext {
     visibility: hidden;
-    /* width: 80%; */
-    background-color: #3939397e;
-    backdrop-filter: blur(15px);
-    color: white;
+    background-color: #5f5f5f7e;
+    color: #8b8b8b;
     text-align: center;
     padding: 8%;
-    padding-left: 12%;
-    padding-right: 12%;
-    border-radius: 50px;
-    border: 2px solid #5f5f5f7e;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: 2px solid transparent;
 
     /* Posiciona el tooltip arriba de la imagen y en el centro horizontalmente */
     position: absolute;
     z-index: 999;
-    top: -45px;
+    bottom: -45px;
     left: 50%;
     transform: translateX(-50%);
     font-family: "Clash Display medium";
@@ -744,12 +794,12 @@ ul {
 
 #contact-tile {
   width: fit-content;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 30px;
-  background-color: #524735;
-  border-radius: 50px;
-  border-color: #524735;
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #5f5f5f7e;
   border-width: 2px;
   border-style: solid;
   display: flex;
@@ -757,20 +807,27 @@ ul {
   align-content: center;
   flex-wrap: wrap;
   margin-right: 10px;
-  color: #97887a;
+  color: #ababab;
   text-decoration: none;
   font-family: 'clash display medium';
   transition: ease-in-out 0.5s;
 }
 
 #contact-tile:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition: ease-in-out 0.3s;
+  border-radius: 20px;
+  background-color: #ababab33;
+  box-shadow: 0px 0px 15px 0px #bababa7e;
 }
-  
-#contact-tile img {
+
+#contact-tile svg path{
+  fill: #ababab;
+}
+
+#contact-tile svg {
   height: 50%;
-  margin-right: 5px;
+  margin-left: -5px;
 }
 
 @media (max-width: 768px) {
@@ -973,7 +1030,7 @@ ul {
 }
 
 #about-me-text p {
-  font-family: "Clash Display light";
+  font-family: 'sorts mill goudy';
   font-size: 24px;
 }
 
