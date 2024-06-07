@@ -38,6 +38,10 @@
   background: #5249398d;
 }
 
+body {
+  background: black;
+}
+
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 8px;
