@@ -385,7 +385,8 @@ hr {
 }
 
 .project-bento-1 {
-  background-color: #303030;
+  background-color: #ffffff14;
+  backdrop-filter: blur(3px);
   border-radius: 22px;
   height: 100%;
   padding-left: 5px;
@@ -417,7 +418,8 @@ hr {
 .font-bento-container {
   width: 100%;
   height: 20%;
-  background-color: #303030;
+  background-color: #ffffff14;
+  backdrop-filter: blur(3px);
   border-radius: 22px;
   display: flex;
   align-items: center;
@@ -452,7 +454,8 @@ hr {
 .main-page-bento-container {
   width: 100%;
   height: calc(60% - 20px);
-  background-color: #303030;
+  background-color: #ffffff14;
+  backdrop-filter: blur(3px);
   border-radius: 22px;
   display: flex;
   align-items: center;
@@ -485,7 +488,8 @@ hr {
 .color-palette-bento-container {
   width: 100%;
   height: 20%;
-  background-color: #303030;
+  background-color: #ffffff14;
+  backdrop-filter: blur(3px);
   border-radius: 22px;
   display: flex;
   flex-direction: row;
@@ -558,7 +562,8 @@ hr {
 .video-bento-container {
   width: 100%;
   height: calc(50% - 5px);
-  background-color: #303030;
+  background-color: #ffffff14;
+  backdrop-filter: blur(3px);
   border-radius: 22px;
   display: flex;
   align-items: center;
@@ -576,7 +581,8 @@ hr {
 .images-bento-container {
   width: 100%;
   height: calc(50% - 5px);
-  background-color: #303030;
+  background-color: #ffffff14;
+  backdrop-filter: blur(3px);
   border-radius: 22px;
   display: flex;
   align-items: center;
@@ -612,7 +618,8 @@ hr {
 .logo-bento-container {
   width: 100%;
   height: calc(50% - 5px);
-  background-color: #303030;
+  background-color: #ffffff14;
+  backdrop-filter: blur(3px);
   border-radius: 22px;
   display: flex;
   align-items: center;
@@ -810,6 +817,7 @@ ul {
   color: #ababab;
   text-decoration: none;
   font-family: 'clash display medium';
+  font-size: 16px;
   transition: ease-in-out 0.5s;
 }
 
@@ -1030,6 +1038,13 @@ ul {
   max-width: 600px;
   text-align: left;
   margin-left: 50px;
+}
+
+#contact-socials-about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #about-me-text h2 {
