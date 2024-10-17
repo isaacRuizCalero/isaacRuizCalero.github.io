@@ -774,7 +774,6 @@ ul {
   display: flex;
   margin-top: 20px;
   align-items: center;
-  min-width: 650px;
 }
 
 #contact-email {
