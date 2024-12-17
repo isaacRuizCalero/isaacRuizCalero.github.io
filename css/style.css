@@ -301,7 +301,7 @@ hr {
 
 .project-bento-1 video {
   height: 97%;
-  border-radius: 22px;
+  border-radius: 17px;
   cursor: pointer;
 }
 
@@ -774,6 +774,7 @@ ul {
   display: flex;
   margin-top: 20px;
   align-items: center;
+  width: max-content;
 }
 
 #contact-email {
