@@ -909,7 +909,6 @@ ul {
 
   /* Navbar adjustments */
   #navbar {
-    padding: 0 3%; /* Smaller padding for larger clickable area */
     height: auto; /* Auto height for accommodating smaller elements */
     background-color: rgba(0, 0, 0, 0.85); /* Better visibility on scroll */
     z-index: 999;
@@ -963,6 +962,10 @@ ul {
   .arrow-1, .arrow-2 {
     display: none; /* Remove navigation arrows not usable on mobile */
   }
+
+  #about-me-nav-text {
+    font-size: 16px;
+  }
 }
 
 /* Additional CSS for very small devices (up to 480px width) */
@@ -973,10 +976,6 @@ ul {
 
   #subtitle {
     font-size: 14px; /* Further reduced subtitle size */
-  }
-
-  #navbar {
-    padding: 0 2%; /* Even smaller padding for maximum space utilization */
   }
 
   .logo h4 a {
@@ -1018,6 +1017,7 @@ ul {
 #about-me-nav-text {
   text-decoration: none;
   color: rgb(192, 192, 192);
+  font-size: 21px;
 }
 
 #about-me-nav-text-active {
