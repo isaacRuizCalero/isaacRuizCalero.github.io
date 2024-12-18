@@ -1049,6 +1049,7 @@ ul {
   #title {
     font-size: 92px;
     text-align: left; 
+    line-height: 0.9;
   }
 
   .title-container {
@@ -1087,17 +1088,23 @@ ul {
     font-size: 16px;
   }
 
-  /* Structural adjustments */
   .swipe-down-container {
-    width: 25%; /* Larger relative width for better visibility */
-    bottom: 10%; /* Increased spacing from the bottom */
-    padding: 5px; /* Padding for better touch responsiveness */
+    width: 25%;
+    top: 95%;
+    padding: 5px; 
+  }
+
+  .technologies-tiles {
+    width: 100%;         /* Ocupa el 80% del ancho de la pantalla */
+    margin: 0 auto;     /* Centra el contenedor */
+    display: flex;      /* Usa flexbox para organizar las tiles */
+    flex-wrap: wrap;    /* Permite que las tiles bajen de línea si no caben */
+    justify-content: flex-start; /* Alinea las tiles al inicio */
   }
   
-  /* Content container adjustments */
-  .title-container, .tile-container, .project-bento, .technologies-tiles {
-    padding: 0 5%; /* Uniform padding for consistent layout */
-    text-align: center; /* Center align for better focus */
+  .technologies-tiles .tile {
+    width: auto;        /* Ajustar automáticamente el ancho de cada tile */
+    margin-bottom: 10px;/* Espacio entre líneas */
   }
 
   /* Button and interactive elements */
@@ -1136,6 +1143,7 @@ ul {
 @media (max-width: 480px) {
   #title {
     font-size: 92px;
+    line-height: 0.9;
   }
 
   .title-container {
@@ -1152,11 +1160,28 @@ ul {
   }
 
   .swipe-down-container {
-    width: 30%; 
+    width: 30%;
+    top: 95%;
+    padding: 5px; 
   }
   
   .project-bento, .technologies-tiles, .carousel {
     flex-direction: column; 
     align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .technologies-tiles {
+    width: 100%;        
+    margin: 0 auto;     
+    display: flex; 
+    flex-wrap: wrap;  
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .technologies-tiles .tile {
+    width: auto;       
+    margin-bottom: 10px;
   }
 }
